@@ -3,7 +3,7 @@
 
 First, you need to go to discord party developers; you need to create an Application and get the Application ID. 🥳
 
-<img src="https://data.veny.fr/screen.png" />
+<img style="border-radius: 10px;" src="https://data.veny.fr/screen.png" />
 
 > After this you need to go on config.json. 🍥
 
