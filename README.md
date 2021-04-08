@@ -1,11 +1,22 @@
+Presence Discord working with Repl.
+
+Frist you need to go on discord portail developers;
+you need to create a Application and get the Application ID.
+
+[img]
+<img src="https://data.veny.fr/screen.png" />
+
+after this, you need to go on config.json.
+
+```
 {
     "config": {
         "transport": ["ipc", "websocket"],
-        "type": 0
+        "type": 0 (don't change this, if you are using your machine.)
     },
     "user": {
         "descriminator": "⚡ Veny",
-        "id": "815295655945175081",
+        "id": "(you need to edit this by your application id.)",
         "details": "💡 yes",
         "state": "👉 13UP",
         "enabled": true,
@@ -48,3 +59,6 @@
         }
     }
 }
+```
+
+after done this here we go.
