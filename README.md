@@ -5,13 +5,13 @@ First, you need to go to discord party developers; you need to create an Applica
 
 <img src="https://data.veny.fr/screen.png" />
 
-> After this you need to go on config.json. 🎗️
-
-```
+> After this you need to go on config.json. 🍥
+> Don't touch "type" value is set by default 0 = ipc 1 = websocket.
+```json
 {
     "config": {
         "transport": ["ipc", "websocket"],
-        "type": 0 (don't change this, if you are using your machine.)
+        "type": 0
     },
     "user": {
         "descriminator": "⚡ Veny",
