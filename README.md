@@ -1,12 +1,11 @@
-Presence Discord working with Repl.
+# Presence Discord working with Repl 🚀 
 
-Frist you need to go on discord portail developers;
-you need to create a Application and get the Application ID.
 
-[img]
+First, you need to go to discord party developers; you need to create an Application and get the Application ID. 🥳
+
 <img src="https://data.veny.fr/screen.png" />
 
-after this, you need to go on config.json.
+> ⭐⭐after this you need to go on config.json. 🎗️
 
 ```
 {
@@ -61,4 +60,4 @@ after this, you need to go on config.json.
 }
 ```
 
-after done this here we go.
+👍 after done this here we go.
