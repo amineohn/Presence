@@ -5,7 +5,7 @@ First, you need to go to discord party developers; you need to create an Applica
 
 <img src="https://data.veny.fr/screen.png" />
 
-> ⭐⭐after this you need to go on config.json. 🎗️
+> After this you need to go on config.json. 🎗️
 
 ```
 {
