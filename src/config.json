@@ -26,12 +26,12 @@
     "image": {
         "large": {
             "name": "board",
-            "text": "yes uiiuiui",
+            "text": "it work great",
             "enabled": true
         },
         "small": {
             "name": "board",
-            "text": "moulagaaa",
+            "text": "it work",
             "enabled": false
         }
     },

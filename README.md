@@ -37,12 +37,12 @@ First, you need to go to discord party developers; you need to create an Applica
     "image": {
         "large": {
             "name": "board",
-            "text": "yes uiiuiui",
+            "text": "it work great",
             "enabled": true
         },
         "small": {
             "name": "board",
-            "text": "moulagaaa",
+            "text": "it work",
             "enabled": false
         }
     },
