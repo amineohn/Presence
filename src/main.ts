@@ -2,13 +2,14 @@ import set from './config.json'
 
 const rpc = require('discord-rpc')
 const client = new rpc.Client({ transport: set.config.transport[set.config.type] }) // ? 0 = ipc 1 = websocket.
+const random = Math.floor(Math.random() * set.rand.number)
 
 client.on(`ready`, () => {
   client.request(`SET_ACTIVITY`, {
     pid: process.pid,
     activity: {
       state: set.user.enabled ? set.user.state : ``,
-      details: set.rand.enabled ? `${set.user.icon}` + set.rand.text[Math.floor(Math.random() * set.rand.number)] : set.user.details,
+      details: set.rand.enabled ? `${set.user.icon}` + set.rand.text[random] : set.user.details,
       assets: {
         large_image: set.image.large.enabled ? set.image.large.name : ``,
         large_text: set.image.large.enabled ? set.image.large.text : ``,
