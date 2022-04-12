@@ -15,11 +15,11 @@ const config = {
   },
   image: {
     large: {
-      name: "board",
+      key: "board",
       text: "it work great",
     },
     small: {
-      name: "board",
+      key: "board",
       text: "it work",
     },
   },

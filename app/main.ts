@@ -12,9 +12,9 @@ client.on("ready", () => {
       details: config.rand.enabled
         ? `${config.user.icon}` + config.rand.text[random]
         : config.user.details,
-      largeImageKey: config.image.large.name,
+      largeImageKey: config.image.large.key,
       largeImageText: config.image.large.text,
-      smallImageKey: config.image.small.name,
+      smallImageKey: config.image.small.key,
       smallImageText: config.image.small.text,
       buttons: [
         {
