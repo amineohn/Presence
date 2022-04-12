@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "discord-rpc": "^4.0.1",
+    "nexe": "^4.0.0-beta.19",
     "ts-node": "^10.7.0"
   },
   "devDependencies": {

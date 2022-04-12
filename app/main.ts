@@ -1,9 +1,17 @@
 import config from "./modules/config";
 import rpc from "discord-rpc";
+import { compile } from "nexe";
 
 const client = new rpc.Client({
   transport: "ipc",
 });
+
+compile({
+  input: "./app/main.ts",
+  output: "./dist/main.exe",
+  resources: ["./app/main.ts", "./app/main.js"],
+});
+
 const random = Math.floor(Math.random() * config.rand.number);
 client.on("ready", () => {
   client.setActivity(
