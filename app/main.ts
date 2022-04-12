@@ -23,7 +23,7 @@ client.on("ready", () => {
         },
       ],
     },
-    process.pid,
+    process.pid
   );
 });
 
@@ -34,5 +34,5 @@ client
   .catch(console.error);
 
 console.log(
-  `\n ${config.user.descriminator} \n ${config.user.state} \n ${config.user.details}`,
+  `\n ${config.user.descriminator} \n ${config.user.state} \n ${config.user.details}`
 );
