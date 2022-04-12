@@ -3,19 +3,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "author": "Veny",
-  "bin": "./src/main.ts",
+  "bin": "./app/main.ts",
   "scripts": {
-    "start": "ts-node ./src/main.ts"
-  },
-  "pkg": {
-    "assets": [
-      "node_modules/**/*",
-      "src/**/*"
-    ],
-    "targets": [
-      "node12-macos-x64",
-      "node10-win-x64"
-    ]
+    "start": "ts-node ./app/main.ts"
   },
   "dependencies": {
     "discord-rpc": "^4.0.1",
