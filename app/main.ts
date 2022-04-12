@@ -6,7 +6,7 @@ const client = new rpc.Client({
 });
 const random = Math.floor(Math.random() * config.rand.number);
 
-client.on(`ready`, () => {
+client.on("ready", () => {
   client.setActivity(
     {
       state: config.user.enabled ? config.user.state : ``,
