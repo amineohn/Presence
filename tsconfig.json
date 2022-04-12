@@ -11,8 +11,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./*"],
-      "@modules/*": ["app/modules/*"],
-      "@config": ["app/config.ts"]
+      "@modules/*": ["app/modules/*"]
     },
     "types": ["node"],
     "esModuleInterop": true,

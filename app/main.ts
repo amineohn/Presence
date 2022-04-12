@@ -1,4 +1,4 @@
-import config from "./config";
+import config from "@modules/config";
 import rpc from "discord-rpc";
 
 const client = new rpc.Client({
