@@ -1,36 +1,39 @@
-import set from './config.json'
+import set from "./config.json";
+import rpc from "discord-rpc";
 
-const rpc = require('discord-rpc')
-const client = new rpc.Client({ transport: set.config.transport[set.config.type] }) // ? 0 = ipc 1 = websocket.
-const random = Math.floor(Math.random() * set.rand.number)
+const client = new rpc.Client({
+  transport: "ipc",
+});
+const random = Math.floor(Math.random() * set.rand.number);
 
 client.on(`ready`, () => {
-  client.request(`SET_ACTIVITY`, {
-    pid: process.pid,
-    activity: {
+  client.setActivity(
+    {
       state: set.user.enabled ? set.user.state : ``,
-      details: set.rand.enabled ? `${set.user.icon}` + set.rand.text[random] : set.user.details,
-      assets: {
-        large_image: set.image.large.enabled ? set.image.large.name : ``,
-        large_text: set.image.large.enabled ? set.image.large.text : ``,
-        //small_image: set.image.small.enabled ? set.image.small.name : ``
-        //small_text: set.image.small.enabled ? set.image.small.text : ``
-      },
+      details: set.rand.enabled
+        ? `${set.user.icon}` + set.rand.text[random]
+        : set.user.details,
+      startTimestamp: new Date(),
+      endTimestamp: new Date(),
+      largeImageKey: set.user.icon,
+      largeImageText: set.rand.text[random],
+      joinSecret: set.user.joinSecret,
       buttons: [
         {
           label: set.buttons.one.enabled ? set.buttons.one.label : ``,
-          url: set.buttons.one.enabled ? set.buttons.one.url : ``
+          url: set.buttons.one.enabled ? set.buttons.one.url : ``,
         },
-        // {
-        //  label: set.buttons.two.enabled ? set.buttons.two.label : ``,
-        //  url: set.buttons.two.enabled ? set.buttons.two.url : ``
-        // }
-      ]
-    }
+      ],
+    },
+    process.pid,
+  );
+});
+client
+  .login({
+    clientId: set.user.id,
   })
-})
-client.login({
-  clientId: set.user.id
-}).catch(console.error)
+  .catch(console.error);
 
-console.log(`\n ${set.user.descriminator} \n ${set.user.state} \n ${set.user.details}`)
+console.log(
+  `\n ${set.user.descriminator} \n ${set.user.state} \n ${set.user.details}`,
+);

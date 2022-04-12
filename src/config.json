@@ -1,50 +1,51 @@
 {
-    "config": {
-        "transport": ["ipc", "websocket"],
-        "type": 0
+  "config": {
+    "transport": ["ipc", "websocket"],
+    "type": 0
+  },
+  "user": {
+    "descriminator": "⚡ Veny",
+    "id": "815295655945175081",
+    "details": "💡 yes",
+    "state": "👉 13UP",
+    "enabled": true,
+    "icon": "💡 ",
+    "joinSecret": "test"
+  },
+  "rand": {
+    "enabled": false,
+    "number": 6,
+    "text": [
+      "chill with Veny",
+      "chill with 3enii",
+      "chill with r",
+      "chill with me",
+      "chill with you",
+      "chill with her"
+    ]
+  },
+  "image": {
+    "large": {
+      "name": "board",
+      "text": "it work great",
+      "enabled": true
     },
-    "user": {
-        "descriminator": "⚡ Veny",
-        "id": "815295655945175081",
-        "details": "💡 yes",
-        "state": "👉 13UP",
-        "enabled": true,
-        "icon": "💡 "
-    },
-    "rand": {
-        "enabled": false,
-        "number": 6,
-        "text": [
-            "chill with Veny", 
-            "chill with 3enii", 
-            "chill with r",
-            "chill with me",
-            "chill with you",
-            "chill with her"
-        ]
-    },
-    "image": {
-        "large": {
-            "name": "board",
-            "text": "it work great",
-            "enabled": true
-        },
-        "small": {
-            "name": "board",
-            "text": "it work",
-            "enabled": false
-        }
-    },
-    "buttons": {
-        "one": {
-            "label": "Website",
-            "url": "https://veny.fr",
-            "enabled": true
-        },
-        "two": {
-            "label": "Test2",
-            "url": "",
-            "enabled": false
-        }
+    "small": {
+      "name": "board",
+      "text": "it work",
+      "enabled": false
     }
+  },
+  "buttons": {
+    "one": {
+      "label": "Website",
+      "url": "https://veny.fr",
+      "enabled": true
+    },
+    "two": {
+      "label": "Test2",
+      "url": "",
+      "enabled": false
+    }
+  }
 }
