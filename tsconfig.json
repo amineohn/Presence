@@ -12,7 +12,7 @@
     "paths": {
       "@/*": ["./*"],
       "@modules/*": ["./src/modules/*"],
-      "@config": ["./src/config.json"]
+      "@config": ["src/config.ts"]
     },
     "types": ["node"],
     "esModuleInterop": true,

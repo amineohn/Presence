@@ -1,27 +1,26 @@
-import set from "./config.json";
+import config from "./config";
 import rpc from "discord-rpc";
 
 const client = new rpc.Client({
   transport: "ipc",
 });
-const random = Math.floor(Math.random() * set.rand.number);
+const random = Math.floor(Math.random() * config.rand.number);
 
 client.on(`ready`, () => {
   client.setActivity(
     {
-      state: set.user.enabled ? set.user.state : ``,
-      details: set.rand.enabled
-        ? `${set.user.icon}` + set.rand.text[random]
-        : set.user.details,
-      startTimestamp: new Date(),
-      endTimestamp: new Date(),
-      largeImageKey: set.user.icon,
-      largeImageText: set.rand.text[random],
-      joinSecret: set.user.joinSecret,
+      state: config.user.enabled ? config.user.state : ``,
+      details: config.rand.enabled
+        ? `${config.user.icon}` + config.rand.text[random]
+        : config.user.details,
+      largeImageKey: config.image.large.name,
+      largeImageText: config.image.large.text,
+      smallImageKey: config.image.small.name,
+      smallImageText: config.image.small.text,
       buttons: [
         {
-          label: set.buttons.one.enabled ? set.buttons.one.label : ``,
-          url: set.buttons.one.enabled ? set.buttons.one.url : ``,
+          label: config.buttons.label,
+          url: config.buttons.url,
         },
       ],
     },
@@ -30,10 +29,10 @@ client.on(`ready`, () => {
 });
 client
   .login({
-    clientId: set.user.id,
+    clientId: config.user.id,
   })
   .catch(console.error);
 
 console.log(
-  `\n ${set.user.descriminator} \n ${set.user.state} \n ${set.user.details}`,
+  `\n ${config.user.descriminator} \n ${config.user.state} \n ${config.user.details}`,
 );
