@@ -17,15 +17,18 @@ const config = {
     large: {
       key: "board",
       text: "it work great",
+      enabled: true,
     },
     small: {
       key: "board",
       text: "it work",
+      enabled: true,
     },
   },
   buttons: {
     label: "Website",
     url: "https://amine.im/",
+    enabled: true,
   },
 };
 

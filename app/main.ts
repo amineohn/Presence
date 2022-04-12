@@ -8,18 +8,18 @@ const random = Math.floor(Math.random() * config.rand.number);
 client.on("ready", () => {
   client.setActivity(
     {
-      state: config.user.enabled ? config.user.state : ``,
+      state: config.user.enabled ? config.user.state : "",
       details: config.rand.enabled
         ? `${config.user.icon}` + config.rand.text[random]
         : config.user.details,
-      largeImageKey: config.image.large.key,
-      largeImageText: config.image.large.text,
-      smallImageKey: config.image.small.key,
-      smallImageText: config.image.small.text,
+      largeImageKey: config.image.large.enabled ? config.image.large.key : "",
+      largeImageText: config.image.large.enabled ? config.image.large.text : "",
+      smallImageKey: config.image.small.enabled ? config.image.small.key : "",
+      smallImageText: config.image.small.enabled ? config.image.small.text : "",
       buttons: [
         {
-          label: config.buttons.label,
-          url: config.buttons.url,
+          label: config.buttons.enabled ? config.buttons.label : "",
+          url: config.buttons.enabled ? config.buttons.url : "",
         },
       ],
     },
