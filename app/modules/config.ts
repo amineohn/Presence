@@ -1,15 +1,15 @@
 const config = {
   user: {
-    descriminator: "Amine",
+    descriminator: "Tsuchiya",
     id: "815295655945175081",
-    details: "💡 yes",
-    state: "👉 boiii",
+    details: "yes",
+    state: "boiii",
     enabled: true,
-    icon: "💡 ",
+    icon: "",
     joinSecret: "test",
   },
   rand: {
-    enabled: true,
+    enabled: false,
     number: 4,
     text: ["wsup Tsuchiya", "wsup FoxGrizzyy", "wsup Dwared", "wsup KeyTos"],
   },
