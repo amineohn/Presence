@@ -9,8 +9,8 @@ const config = {
     joinSecret: "test",
   },
   rand: {
-    enabled: false,
-    number: 6,
+    enabled: true,
+    number: 4,
     text: ["wsup Tsuchiya", "wsup FoxGrizzyy", "wsup Dwared", "wsup KeyTos"],
   },
   image: {

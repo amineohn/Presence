@@ -5,7 +5,6 @@ const client = new rpc.Client({
   transport: "ipc",
 });
 const random = Math.floor(Math.random() * config.rand.number);
-
 client.on("ready", () => {
   client.setActivity(
     {
@@ -27,6 +26,7 @@ client.on("ready", () => {
     process.pid,
   );
 });
+
 client
   .login({
     clientId: config.user.id,
