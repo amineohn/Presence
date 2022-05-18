@@ -11,7 +11,7 @@ const config = {
   rand: {
     enabled: false,
     number: 4,
-    text: ["wsup Tsuchiya", "wsup FoxGrizzyy", "wsup Dwared", "wsup KeyTos"],
+    text: ["wsup Tsuchiya", "wsup FoxGrizzyy", "wsup Dwared"],
   },
   image: {
     large: {
